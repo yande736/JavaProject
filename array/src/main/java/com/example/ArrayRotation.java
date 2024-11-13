@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayRotation {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
-        int k = 2;
+        int k = 3;
         String direction = "right";
 
         System.out.println("Array sebelum rotasi: " + Arrays.toString(numbers));
@@ -17,7 +17,7 @@ public class ArrayRotation {
 
     public static int[] rotateArray(int[] numbers, int k, String direction) {
         int n = numbers.length;
-        k = k % n; // Mengatasi kasus k > panjang array
+        k = k % n;
 
         // Jika arah rotasi ke kanan
         if (direction.equalsIgnoreCase("right")) {
